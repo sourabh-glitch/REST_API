@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All posts</title>
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <h1>Quora posts</h1>
@@ -14,8 +14,15 @@
         <div class="post">
             <h3 class="user">@<%= post.username %></h3>
             <h4 class="content"><%= post.content %></h4>
+            <br>
+            <a href="http://127.0.0.1:8080/posts/<%= post.id %>">See in details</details></a>
         </div>
 
         <% } %>
+<br>
+<br>
+<a href="http://127.0.0.1:8080/posts/new"> Create new post</a>
+
+
 </body>
 </html>
