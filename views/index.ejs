@@ -15,7 +15,11 @@
             <h3 class="user">@<%= post.username %></h3>
             <h4 class="content"><%= post.content %></h4>
             <br>
-            <a href="http://127.0.0.1:8080/posts/<%= post.id %>">See in details</details></a>
+            <a href="http://127.0.0.1:8080/posts/<%= post.id %>">See in details</a>
+            <a href="http://127.0.0.1:8080/posts/<%= post.id%>/edit">Edit</a>
+            <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                <button>Delete Post</button>
+            </form>
         </div>
 
         <% } %>
